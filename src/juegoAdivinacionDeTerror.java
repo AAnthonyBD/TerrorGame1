@@ -7,10 +7,8 @@ public static void main(String[] args) throws InterruptedException {
     int numeroPensado = random.nextInt(100) + 1;
     int intentos = 3;
     int saldoCuenta = random.nextInt(400)+100;
-    int reinicios;
-    int familiares;
     String nombre;
-    int numeroAdivinado = 0;
+    int numeroAdivinado;
     boolean juegoTerminado = false;
     String respuesta;
     String Bienvenida = """
@@ -22,8 +20,7 @@ public static void main(String[] args) throws InterruptedException {
             """;
     String familiarSacrificado = """
             El sacrificio fue aceptado, se le ha concedido un nuevo intento. 
-            Disfrutelo.
-            """;
+            Disfrutelo.""";
     String goodEnding = """
             Veo que logro adivinar en menos de 3 intentos, sus familiares y vida como la conoce
             no sufriran ninguna repercurcion. GRACIAS POR JUGAR. 
