@@ -32,7 +32,7 @@ public class JuegoAdivinacionDeTerror {
                 """;
 
         String badEnding = """
-                Lo siento, pero has fallado en los 3 primeros intentos. Para seguir jugando deberás dar a 
+                Lo siento, pero has fallado en los 3 primeros intentos. Para seguir jugando deberás dar a
                 una persona cercana a ti como canje. Si por el contrario deseas abandonar, deberás dar tu 
                 vida a cambio. GRACIAS.
                 """;
