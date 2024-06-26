@@ -85,7 +85,6 @@ public class JuegoAdivinacionDeTerror {
                 }
             }
         } while (!juegoTerminado);
-
         teclado.close();
     }
 }
