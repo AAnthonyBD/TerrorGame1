@@ -19,11 +19,11 @@ public static void main(String[] args) throws InterruptedException {
             BUENA SUERTE
             """;
     String familiarSacrificado = """
-            El sacrificio fue aceptado, se le ha concedido un nuevo intento. 
+            El sacrificio fue aceptado, se le ha concedido un nuevo intento.
             Disfrutelo.""";
     String goodEnding = """
             Veo que logro adivinar en menos de 3 intentos, sus familiares y vida como la conoce
-            no sufriran ninguna repercurcion. GRACIAS POR JUGAR. 
+            no sufriran ninguna repercurcion. GRACIAS POR JUGAR.
             """;
     String badEnding = """
             Lo siento pero lastimosamente ha fallado en los 3 primeros intentos, para seguir
@@ -82,13 +82,13 @@ public static void main(String[] args) throws InterruptedException {
     int saldoCuenta = random.nextInt(201)+100;
     String nuevoJuego = """
             Debido a su reciente infecacia para adivinar un numero ha tenido que pasar por
-            la penosa perdida de uno de sus familiares, de seguir asi no le quedara nadie. 
+            la penosa perdida de uno de sus familiares, de seguir asi no le quedara nadie.
             NO VUELVA A FALLAR.
             """;
         System.out.println(nuevoJuego);
         jugar(random,teclado,numeroPensado, intentos, saldoCuenta);
     }
-    private static void jugar(Random random, Scanner teclado, int numeroPensado, int intentos, int saldoCuenta){
+    private static void jugar(Scanner teclado, int numeroPensado, int intentos, int saldoCuenta){
     boolean juegoTerminado = false;
     while (!juegoTerminado){
         System.out.println("Te quedan "+intentos+" intentos restantes.");
@@ -96,7 +96,7 @@ public static void main(String[] args) throws InterruptedException {
         System.out.println("Introduce un numero del 1 al 100");
         String goodEnding = """
             Veo que logro adivinar en menos de 3 intentos, sus familiares y vida como la conoce
-            no sufriran ninguna repercurcion. GRACIAS POR JUGAR. 
+            no sufriran ninguna repercurcion. GRACIAS POR JUGAR.
             """;
         int numeroAdivinanza = teclado.nextInt();
         if(numeroAdivinanza==numeroPensado){
